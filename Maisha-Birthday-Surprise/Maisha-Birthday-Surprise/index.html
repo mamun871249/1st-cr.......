@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff3f5">
+  <meta name="description" content="A little birthday world made with extra care for Maisha.">
+  <title>A Little World of Maisha ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="progress-track"><span id="scrollProgress"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="A Little World of Maisha home">a little world <span>♡</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#birthday">Birthday</a><a href="#letter">A letter</a><a href="#memories">Memories</a><a href="#secret">Secret note</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" aria-label="Play background music" aria-pressed="false">
+      <span class="music-icon">♫</span><span id="musicLabel">Music off</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-sparkle sparkle-a">✦</div><div class="hero-sparkle sparkle-b">✧</div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A tiny surprise, made just for you <span class="eyebrow-line"></span></p>
+        <h1>Hey, <em>Maisha.</em><br><span>this little world is yours.</span></h1>
+        <p class="hero-intro">A few words, little memories, and a whole lot of good wishes — collected here for your special day.</p>
+        <a class="button button-primary" href="#birthday">Open your surprise <span>↘</span></a>
+        <p class="tiny-note">Made with a little extra care ♡</p>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative birthday illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-flower flower-one">✿</div><div class="hero-flower flower-two">✿</div>
+        <div class="hero-card">
+          <span class="card-kicker">A DAY TO CELEBRATE</span>
+          <div class="cake-illustration"><span class="candle">│<i>✦</i></span><div class="cake-top"></div><div class="cake-middle"></div><div class="cake-bottom"></div><div class="cake-plate"></div></div>
+          <p>for someone<br><em>pretty wonderful</em></p>
+          <span class="card-date">21 · NOV</span>
+        </div>
+        <span class="floating-heart heart-one">♡</span><span class="floating-heart heart-two">♥</span><span class="floating-star star-one">✧</span>
+      </div>
+      <a class="scroll-cue" href="#birthday"><span></span> scroll a little</a>
+    </section>
+
+    <section class="birthday-section section" id="birthday">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE CALENDAR HAS A FAVOURITE DAY</p>
+        <h2>Counting down to <em>you.</em></h2>
+        <p>November 21 — a lovely reason to celebrate.</p>
+      </div>
+      <div class="countdown-card reveal">
+        <div class="countdown-top"><span>✦ THE BIG DAY ✦</span><span class="date-pill">21 NOVEMBER</span></div>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="time-unit"><strong id="days">--</strong><span>days</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong id="hours">--</strong><span>hours</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong id="minutes">--</strong><span>minutes</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong id="seconds">--</strong><span>seconds</span></div>
+        </div>
+        <p class="countdown-message" id="countdownMessage">A little more time until your day arrives ♡</p>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-decoration">❀</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">SOMETHING FROM THE HEART</p>
+        <h2>A little letter <em>for you.</em></h2>
+        <p>Take your time. This one is yours.</p>
+      </div>
+      <button class="envelope reveal" id="openLetter" aria-label="Open your birthday letter">
+        <span class="envelope-stamp">for<br>M ♡</span><span class="envelope-flap"></span><span class="envelope-front"></span>
+        <span class="envelope-hint">tap to open</span>
+      </button>
+      <article class="letter-paper" id="letterPaper" aria-hidden="true">
+        <button class="close-letter" id="closeLetter" aria-label="Close letter">×</button>
+        <p class="letter-date">A LITTLE NOTE · 21 NOVEMBER</p>
+        <h3>Dear Maisha,</h3>
+        <p>Some people make ordinary days feel a little brighter just by being themselves. I hope you never forget how much goodness you bring into the little moments around you.</p>
+        <p>May this new year of your life bring you peaceful days, unexpected happiness, brave new beginnings, and countless reasons to smile.</p>
+        <p>And there's one more thing: you've become someone quite special to me. I may not always find the perfect words, but I genuinely enjoy having you in my world. No pressure to say anything back — I just wanted you to know.</p>
+        <p class="letter-signoff">Keep shining, always. <span>♡</span><br><em>Someone who wishes you the best</em></p>
+      </article>
+    </section>
+
+    <section class="memories-section section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LITTLE MOMENTS, BIG SMILES</p>
+        <h2>A few lovely <em>memories.</em></h2>
+        <p>Add your favourite photos here whenever you're ready.</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="polaroid polaroid-one reveal"><div class="photo-frame"><img src="assets/images/photo-1.jpg" alt="A favourite memory with Maisha" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">✿<small>your photo here</small></span></div><figcaption>little moments ♡</figcaption></figure>
+        <figure class="polaroid polaroid-two reveal"><div class="photo-frame"><img src="assets/images/photo-2.jpg" alt="A happy memory" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">☁<small>your photo here</small></span></div><figcaption>good times, always</figcaption></figure>
+        <figure class="polaroid polaroid-three reveal"><div class="photo-frame"><img src="assets/images/photo-3.jpg" alt="A special moment" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">♡<small>your photo here</small></span></div><figcaption>one for the scrapbook</figcaption></figure>
+      </div>
+      <p class="photo-tip">Tip: replace photo-1.jpg, photo-2.jpg and photo-3.jpg in the images folder with your own photos.</p>
+    </section>
+
+    <section class="special-section section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A FEW THINGS WORTH REMEMBERING</p>
+        <h2>You're special in <em>your own way.</em></h2>
+      </div>
+      <div class="reasons">
+        <article class="reason-card reveal"><span>01</span><div class="reason-icon">☼</div><h3>Your energy</h3><p>You have your own way of making a moment feel lighter.</p></article>
+        <article class="reason-card reveal"><span>02</span><div class="reason-icon">✿</div><h3>Your kindness</h3><p>The little thoughtful things can mean more than you know.</p></article>
+        <article class="reason-card reveal"><span>03</span><div class="reason-icon">✧</div><h3>Your individuality</h3><p>Keep being completely, wonderfully yourself.</p></article>
+      </div>
+    </section>
+
+    <section class="secret-section section" id="secret">
+      <div class="secret-box reveal">
+        <div class="secret-sparkle">✧</div><div class="gift-icon">🎁</div>
+        <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+        <h2>There's a tiny note <em>inside.</em></h2>
+        <p>Only open it if you're curious.</p>
+        <button class="button button-primary" id="revealSecret">Unwrap the note <span>♡</span></button>
+        <div class="secret-message" id="secretMessage" aria-hidden="true">
+          <div class="secret-divider">✦　♡　✦</div>
+          <p>I don't know exactly where life will take us, but I'm glad our paths crossed. You matter to me, Maisha, and I hope today reminds you how appreciated you are.</p>
+          <span>With warm wishes, always.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section section" id="finalWish">
+      <div class="final-stars">✦　✧　✦</div>
+      <p class="eyebrow">AND NOW, THE MOST IMPORTANT PART</p>
+      <h2>Happy Birthday,<br><em>Maisha!</em></h2>
+      <p>May your days be soft, your dreams be big, and your smiles be endless.</p>
+      <button class="button button-light" id="celebrateButton">Make a wish ✨</button>
+      <p class="final-signature">A little world, made just for you <span>♡</span></p>
+    </section>
+  </main>
+
+  <footer><span>Made with care for Maisha</span><span>21 November · ♡</span></footer>
+  <audio id="backgroundMusic" src="assets/music/your-song.mp3" loop preload="none"></audio>
+  <div class="toast" id="toast" role="status">A little wish is on its way ♡</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
